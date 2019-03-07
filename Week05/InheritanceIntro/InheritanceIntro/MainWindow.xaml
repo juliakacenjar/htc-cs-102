@@ -6,9 +6,12 @@
         xmlns:local="clr-namespace:InheritanceIntro"
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="700">
-    <StackPanel>
+    <StackPanel Margin="0,0,2,-21">
         <Image Source="dog.jpg" Width="700"/>
         <Button Click="Bark_Button_Click">Bark</Button>
+        <Button Click="Quack_Button_Click">Quack</Button>
+        <Button Click="Ribbit_Button_Click">Ribbit</Button>
+        <Button Click="silence_Button_Click">Woolly Bear Noise</Button>
         <Button Click="SayName_Button_Click">Say Name</Button>
     </StackPanel>
 </Window>
