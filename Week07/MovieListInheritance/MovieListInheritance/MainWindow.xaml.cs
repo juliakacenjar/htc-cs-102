@@ -39,8 +39,19 @@ namespace MovieList
 
             titleInput.Clear();
             releaseYearInput.Clear();
+           
         }
+        private void AnimatedMovieButton(object sender, RoutedEventArgs e)
+        {
+            AnimatedMovie movieToAdd = new AnimatedMovie(titleInput.Text, int.Parse(releaseYearInput.Text), animationStudio.Text, animationType.Text);
 
+            MovieList.Add(movieToAdd);
+
+            titleInput.Clear();
+            releaseYearInput.Clear();
+            animationStudio.Clear();
+            animationType.Clear();
+        }
         private void ShowButton_Click(object sender, RoutedEventArgs e)
         {
             foreach (Movie m in MovieList)
