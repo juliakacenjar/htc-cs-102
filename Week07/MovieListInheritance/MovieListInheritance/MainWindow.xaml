@@ -30,10 +30,18 @@
 
 
         <!-- Border surrounding Animated Movie options -->
-        <Border BorderThickness="1" BorderBrush="Gray" Padding="10">
+        <Border BorderThickness="1" BorderBrush="Gray" Padding="10" Height="1" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
             <StackPanel>
                 <!-- Put Animated Movie options in here -->
-                
+
             </StackPanel>
         </Border>
     </StackPanel>
